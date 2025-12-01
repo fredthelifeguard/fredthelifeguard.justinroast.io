@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Justin Roast</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg-light: #f7efe4;
+      --bg-dark: #c6a88b;
+      --text-main: #2e241e;
+      --button-border: #7b6552;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      color: var(--text-main);
+      background: radial-gradient(circle at 65% 40%, var(--bg-light) 0, var(--bg-light) 40%, var(--bg-dark) 100%);
+    }
+
+    .page {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 24px 24px 80px;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.95rem;
+      margin-bottom: 72px;
+    }
+
+    .brand {
+      font-weight: 600;
+      letter-spacing: 0.04em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-main);
+      opacity: 0.8;
+    }
+
+    .nav-links a:hover {
+      opacity: 1;
+    }
+
+    .hero {
+      max-width: 520px;
+      padding-bottom: 80px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.4rem, 4vw, 3.2rem);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin-bottom: 32px;
+    }
+
+    .hero-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 32px;
+      border-radius: 999px;
+      border: 1px solid var(--button-border);
+      background: rgba(247, 239, 228, 0.7);
+      text-decoration: none;
+      font-size: 0.95rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .hero-button:hover {
+      background: rgba(247, 239, 228, 0.95);
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="nav">
+      <div class="brand">Justin Roast</div>
+      <nav class="nav-links">
+        <a href="#journal">Journal</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <h1>Welcome to my comforting coffee corner, where every brew tells a story.</h1>
+      <p>
+        I’m tasting my way through Advent, one cup at a time. Join me on a
+        journey of aromatic flavors and small rituals, and discover the warmth
+        each cup can bring to a day.
+      </p>
+      <a class="hero-button" href="#journal">Enter the journal</a>
+    </main>
+  </div>
+</body>
+</html>
